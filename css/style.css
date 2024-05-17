@@ -1,0 +1,215 @@
+*{
+    margin: 0px;
+}
+/* navbar section */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+#navbar::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+#navbar .logo{
+    /* border: 2px solid red; */
+    padding: 10px 0px;
+
+}
+#navbar .logo img{
+    height: 60px;
+    width: 60px;
+    padding: 0px 10px;
+    margin: 0px 0px;
+    border-radius: 400px;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul .list{
+    list-style: none;
+   
+}
+#navbar ul .list a{
+    color: white;
+    text-decoration: none;
+    padding: 4px 10px;
+    margin: 3px 26px;
+    border-radius: 5px;
+    font-size: 18px;
+} 
+#navbar ul .list a:hover{
+    color: black;
+    background-color: rgb(227, 209, 209);
+} 
+#Home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px -4px;
+    padding: 128px 34px;
+    position: relative;
+}
+#Home::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    background: url(../img/bg5.jpg) no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.7;
+}
+#Home h1{
+    margin: 25px 20px;
+    font-size: 47px;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+#Home p{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+#Home .btn{
+    color: rgb(77, 67, 67);
+    height: 43px;
+    width: 109px;
+    margin: 33px 10px;
+    border: 2px solid;
+    background-color: #ea1e1e;
+    font-size: 23px;
+    cursor: pointer;
+    /* font-style: bold; */
+}
+#Home .btn:hover{
+    background-color: rgba(255, 10, 30, 0.904);
+    color: white;
+}
+#services{
+    display: flex;
+
+
+}
+#myservices{
+    margin: 0px 40px;
+    position: relative;
+
+}
+#myservices::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* background: url(../img/bg3.jpg) no-repeat center center/cover; */
+    z-index: -1;
+    opacity: 0.5;
+}
+#services .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(16, 15, 15);
+    /* margin: 20px 20px;
+    padding: 20px 20px; */
+    background-color: #eae6f1;
+    border-radius: 11px;
+    margin: 20px 20px;
+
+    /* display: flex; */
+}
+#services .box img{
+    height: 100px;
+    width: 100px;
+    margin: 20px 0px;
+}
+#myservices h1{
+    text-align: center;
+    font-size: 51px;
+    margin: 30px;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+#myclients{
+    position: relative;
+}
+#myclients::before{
+    content: '';
+    position: absolute;
+    background: url(../img/bg4.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#myclients h1{
+    font-size: 80px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clients img{
+    margin: 20px 20px;
+    height: 100px;
+    width: 100px;
+    padding: 20px 20px;
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#contact::before{
+    content: '';
+    position: absolute;
+    background: url(../img/contact.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+#contact h1{
+    font-size: 60px;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+#contact form{
+    border: 7px solid black;
+    padding: 20px 20px ;
+    margin: 20px 20px;
+    border-radius: 40px;
+    /* font-style: bold; */
+    font-size: 20px;
+    width: 40%;
+}
+
+#contact form textarea,input{
+    display: block;
+    width: 100%;
+    /* font-size: 30px; */
+}
+#footer p{
+    text-align: center;
+}
+#footer{
+    background-color: black;
+    color: white;
+}
